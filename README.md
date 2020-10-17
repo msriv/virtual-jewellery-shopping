@@ -32,3 +32,11 @@ You need to build a website using the Angular 7 framework​ with static JSON da
 
 - Good semantic markup structure and logical flow of DOM elements.
 - Scale in Web and Mobile(Responsive), Chrome browser Do get in touch if you have any queries.
+
+## SOLUTION
+
+Following is the supporting explanation about the solution that I created for this assignment.
+
+### Component and Module architecture
+
+![component_architecture](Component_architecture.png)
