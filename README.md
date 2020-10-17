@@ -1,6 +1,8 @@
 # Virtual Jewellery Shopping
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/66d9e157-6961-4bad-9547-e6d052f2e35f/deploy-status)](https://app.netlify.com/sites/virtual-jewellery-shopping/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 This is the assignment given by [F1Studioz](https://www.f1studioz.com/) for the placement process.
 
