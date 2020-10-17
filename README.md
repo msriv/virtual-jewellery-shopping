@@ -1,27 +1,34 @@
-# VirtualJewelleryShopping
+# Virtual Jewellery Shopping
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+This is the assignment given by [F1Studioz](https://www.f1studioz.com/) for the placement process.
 
-## Development server
+Below is the assignment brief -
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## ASSIGNMENT
 
-## Code scaffolding
+These days we could find many e-commerce websites for shopping. Here is a case study of virtual
+jewelry shopping.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Problem Statement
 
-## Build
+You need to build a website using the Angular 7 framework​ with static JSON data.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- The mock screen of the web conference.
+- Billing of product details
+- Customer details
+- Shipping address form.(Use angular Reactive forms concept)
+- The application should scale in desktop and mobile
+- For the mobile view, billing pop will take full-screen width.
+- Please deploy the application on GitHub and share
 
-## Running unit tests
+#### Links for reference
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Create an application in Angular (​ https://angular.io/start​)
+- Use components of ng-bootstrap like Navbar, Modal
+  (​https://ng-bootstrap.github.io/#/components/accordion/examples​)
+- Implement navigation using the angular router (​https://angular.io/guide/router​)
 
-## Running end-to-end tests
+#### Good to have
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Good semantic markup structure and logical flow of DOM elements.
+- Scale in Web and Mobile(Responsive), Chrome browser Do get in touch if you have any queries.
