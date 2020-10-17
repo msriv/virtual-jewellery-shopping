@@ -42,3 +42,6 @@ Following is the supporting explanation about the solution that I created for th
 ### Component and Module architecture
 
 ![component_architecture](Component_architecture.png)
+
+### Demo
+This is [demo](https://virtual-jewellery-shopping.netlify.app/) running on a netlify server.
