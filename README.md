@@ -1,5 +1,7 @@
 # Virtual Jewellery Shopping
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/66d9e157-6961-4bad-9547-e6d052f2e35f/deploy-status)](https://app.netlify.com/sites/virtual-jewellery-shopping/deploys)
+
 This is the assignment given by [F1Studioz](https://www.f1studioz.com/) for the placement process.
 
 Below is the assignment brief -
