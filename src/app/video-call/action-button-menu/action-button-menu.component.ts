@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventEmitterService } from '../../event-emitter.service';
 
 @Component({
   selector: 'app-action-button-menu',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./action-button-menu.component.scss'],
 })
 export class ActionButtonMenuComponent implements OnInit {
-  constructor() {}
+  constructor(private eventEmitterService: EventEmitterService) {}
 
   ngOnInit(): void {}
+
+  startBillingFunction() {
+    this.eventEmitterService.onStartBillingClick();
+  }
 }

@@ -6,6 +6,7 @@ import { CallDurationComponent } from './call-duration/call-duration.component';
 import { ActionButtonMenuComponent } from './action-button-menu/action-button-menu.component';
 import { VideoCallComponent } from './video-call/video-call.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EventEmitterService } from '../event-emitter.service';
 
 @NgModule({
   declarations: [
@@ -17,5 +18,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [CommonModule, NgbModule],
   exports: [VideoCallComponent],
+  providers: [EventEmitterService],
 })
 export class VideoCallModule {}

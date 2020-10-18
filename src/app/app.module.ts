@@ -7,6 +7,7 @@ import { VideoCallModule } from './video-call/video-call.module';
 import { BillingModule } from './billing/billing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResponsiveModule } from 'ngx-responsive';
+import { EventEmitterService } from './event-emitter.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,7 @@ import { ResponsiveModule } from 'ngx-responsive';
     NgbModule,
     ResponsiveModule.forRoot(),
   ],
-  providers: [],
+  providers: [EventEmitterService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

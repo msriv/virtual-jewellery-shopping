@@ -1,12 +1,16 @@
 ng-sidebar-container {
+  position: fixed;
+  top: 0;
   height: 100vh;
+  z-index: 100;
 }
 
 ::ng-deep .ng-sidebar {
   background-color: #f4f4f4;
   width: 350px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
-  position: absolute;
+  position: relative;
+  z-index: 102;
   right: 0;
   top: 0;
 }

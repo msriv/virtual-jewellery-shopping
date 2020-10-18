@@ -1,6 +1,6 @@
 .video-feed {
   position: absolute;
-  z-index: -100;
+  z-index: -2;
   width: 100vw;
   height: 100vh;
   img {
@@ -11,7 +11,7 @@
 
 .header {
   position: relative;
-  z-index: 100;
+  z-index: 50;
   display: flex;
   justify-content: space-between;
   align-items: center;

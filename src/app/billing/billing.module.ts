@@ -7,6 +7,7 @@ import { PaymentInfoModule } from './payment-info/payment-info.module';
 import { SharedModule } from '../shared/shared.module';
 import { ResponsiveModule } from 'ngx-responsive';
 import { SidebarModule } from 'ng-sidebar';
+import { EventEmitterService } from '../event-emitter.service';
 @NgModule({
   declarations: [BillingComponent],
   imports: [
@@ -24,5 +25,6 @@ import { SidebarModule } from 'ng-sidebar';
     CustomerDetailsModule,
     PaymentInfoModule,
   ],
+  providers: [EventEmitterService],
 })
 export class BillingModule {}
