@@ -1,0 +1,26 @@
+.product-cart {
+  margin: 1em;
+  background-color: lightblue;
+
+  .product-form {
+    background-color: white;
+  }
+}
+
+form {
+  padding: 1em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,1 +1,50 @@
-<p>participants works!</p>
+<div class="participants">
+  <p>
+    <button
+      type="button"
+      class="parti-btn"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+    >
+      <svg
+        class="right-icon"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </p>
+  <div id="collapseExample" [hidden]="isCollapsed">
+    <div class="paricipant-window">
+      <div class="window-content">
+        <img src="../../../assets/video-off.svg" />
+        <p>Matthew</p>
+      </div>
+    </div>
+    <div class="paricipant-window">
+      <div class="window-content">
+        <img
+          id="video"
+          src="https://www.thestatesman.com/wp-content/uploads/2019/07/Vintage-Jewellery-1024x683.jpg"
+        />
+        <p id="video-text">Camera_3</p>
+      </div>
+    </div>
+    <div class="paricipant-window">
+      <div class="window-content">
+        <img
+          id="video"
+          src="https://clicklikethis.com/wp-content/uploads/2020/03/best-webcam-for-youtube.jpg"
+        />
+        <p id="video-text">Samantha Sales...</p>
+      </div>
+    </div>
+  </div>
+</div>

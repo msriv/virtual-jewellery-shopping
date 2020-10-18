@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { VideoCallModule } from './video-call/video-call.module';
 import { BillingModule } from './billing/billing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ResponsiveModule } from 'ngx-responsive';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BillingModule,
     VideoCallModule,
     NgbModule,
+    ResponsiveModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

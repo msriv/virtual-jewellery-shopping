@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="36px" viewBox="0 0 99 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard_1" transform="translate(-30.000000, -12.000000)">
+            <g id="Logo_2" transform="translate(30.000000, 12.000000)">
+                <g id="Group-2">
+                    <polygon id="Path-2" fill="#2C5FF6" points="19.4021032 0.367055465 19.4021032 22.974787 0.0907216404 34.046597"></polygon>
+                    <polygon id="Path-3" fill="#28BC23" points="20.928023 0.367056345 20.928023 23.0446662 40.8585844 34.2324474"></polygon>
+                    <polygon id="Path-4" fill="#EEA032" points="20.2040816 24.4054954 0.298399729 35.7527986 40.5906726 35.7527986"></polygon>
+                </g>
+                <text id="Kraya" font-family="OpenSans-Extrabold, Open Sans" font-size="18" font-weight="600" fill="#fff">
+                    <tspan x="52" y="25">Kraya</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

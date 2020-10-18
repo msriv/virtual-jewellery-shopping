@@ -1,0 +1,56 @@
+.participants {
+  display: flex;
+  height: 100px;
+}
+
+.parti-btn {
+  height: 100px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.right-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+#collapseExample {
+  display: flex;
+}
+
+.paricipant-window {
+  height: 100px;
+  width: 150px;
+  background-color: black;
+  .window-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    img {
+      width: 50px;
+    }
+    img#video {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+    }
+    p {
+      margin: 5px 0;
+      z-index: 2;
+    }
+    p#video-text {
+      margin-top: 50px;
+    }
+  }
+}

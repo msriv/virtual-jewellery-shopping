@@ -1,0 +1,31 @@
+#countdown {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin: 0 1em;
+}
+
+#countdown-number {
+  color: white;
+  display: inline-block;
+  line-height: 40px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 30px;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke: #66c702;
+  fill: none;
+}

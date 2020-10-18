@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./billing.component.scss'],
 })
 export class BillingComponent implements OnInit {
+  opened: boolean = false;
+  position: string = 'end';
+  state: string[] = ['Products', 'Customer', 'Payments'];
   constructor() {}
 
   ngOnInit(): void {}
+
+  showBillingMenu() {
+    this.opened = !this.opened;
+  }
 }

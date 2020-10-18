@@ -1,6 +1,18 @@
-<p>billing works!</p>
-<app-step-indicator></app-step-indicator>
-<app-product-cart></app-product-cart>
-<app-user-info-form></app-user-info-form>
-<app-payment-method></app-payment-method>
-<app-store-select></app-store-select>
+<ng-sidebar-container>
+  <ng-sidebar [position]="position" [opened]="opened">
+    <div class="top-menu">
+      <img src="../../../assets/logo.svg" alt="logo" />
+      <button id="closebtn" (click)="showBillingMenu()">
+        <img src="../../../assets/close-icon-blue.svg" />
+      </button>
+    </div>
+    <hr />
+    <app-product-cart></app-product-cart>
+    <app-user-info-form></app-user-info-form>
+    <app-payment-method></app-payment-method>
+    <app-store-select></app-store-select>
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    <button (click)="showBillingMenu()">Start Billing</button>
+  </div>
+</ng-sidebar-container>

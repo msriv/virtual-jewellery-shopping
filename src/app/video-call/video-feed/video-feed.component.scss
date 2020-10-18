@@ -1,0 +1,31 @@
+.video-feed {
+  position: absolute;
+  z-index: -100;
+  width: 100vw;
+  height: 100vh;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  color: black;
+
+  .call-name {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .call-data {
+    display: flex;
+    align-items: center;
+  }
+}

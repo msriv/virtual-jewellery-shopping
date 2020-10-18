@@ -9,4 +9,6 @@ export class ParticipantsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  isCollapsed: boolean = false;
 }

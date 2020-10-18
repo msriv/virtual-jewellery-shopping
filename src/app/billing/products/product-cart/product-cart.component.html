@@ -1,1 +1,39 @@
-<p>product-cart works!</p>
+<app-step-indicator step="1"></app-step-indicator>
+<!-- 
+    Model / Product id #
+    Product type
+    Purity    
+    Weight
+ -->
+<div class="product-cart">
+  <ngb-tabset [destroyOnHide]="false">
+    <button class="add-more">+ Add More</button>
+    <ngb-tab title="Product-1">
+      <ng-template ngbTabContent>
+        <div class="product-form">
+          <form [formGroup]="productForm">
+            <label>
+              Model / Product id #
+              <input type="text" formControlName="id" />
+            </label>
+            <label>
+              Product type
+              <input type="text" formControlName="type" />
+            </label>
+            <label>
+              Purity
+              <input type="text" formControlName="purity" />
+            </label>
+            <label>
+              Weight
+              <input type="text" formControlName="weight" />
+            </label>
+          </form>
+        </div>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>
+
+<app-order-summary></app-order-summary>
+<button></button>

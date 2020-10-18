@@ -1,0 +1,57 @@
+<div class="progress">
+  <div class="step">
+    <div class="icon">
+      <img src="../../../assets/product.svg" />
+    </div>
+    <p>Product Details</p>
+    <div class="bullet">
+      <span [hidden]="!stage1complete" [class.complete]="!stage1">
+        <svg
+          style="width: 15px; height: 15px"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+      <span [hidden]="stage1complete" [class.active]="stage1">1</span>
+    </div>
+  </div>
+  <div class="step">
+    <div class="icon">
+      <img src="../../../assets/contact-information.svg" />
+    </div>
+    <p>Customer Details</p>
+    <div class="bullet">
+      <span [hidden]="!stage2complete" [class.complete]="!stage2">
+        <svg
+          style="width: 15px; height: 15px"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+      <span [hidden]="stage2complete" [class.active]="stage2">2</span>
+    </div>
+  </div>
+  <div class="step">
+    <div class="icon">
+      <img src="../../../assets/credit-card.svg" />
+    </div>
+    <p>Payment Info</p>
+    <div class="bullet">
+      <span [class.active]="stage3">3</span>
+    </div>
+  </div>
+</div>

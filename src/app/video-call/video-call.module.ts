@@ -5,6 +5,7 @@ import { ParticipantsComponent } from './participants/participants.component';
 import { CallDurationComponent } from './call-duration/call-duration.component';
 import { ActionButtonMenuComponent } from './action-button-menu/action-button-menu.component';
 import { VideoCallComponent } from './video-call/video-call.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { VideoCallComponent } from './video-call/video-call.component';
     ActionButtonMenuComponent,
     VideoCallComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, NgbModule],
+  exports: [VideoCallComponent],
 })
 export class VideoCallModule {}

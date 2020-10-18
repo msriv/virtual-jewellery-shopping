@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70vh;
+  padding: 2em;
+  width: 100%;
+}
+
+.action-button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 12%;
+}
+
+.extra-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 16%;
+
+  .billing-btn {
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+  }
+
+  .full-screen {
+    margin-left: 1em;
+    background: transparent;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+  }
+}
