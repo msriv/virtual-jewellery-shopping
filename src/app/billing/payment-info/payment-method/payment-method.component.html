@@ -1,1 +1,60 @@
 <app-step-indicator step="3"></app-step-indicator>
+
+<div class="payment-method">
+  <div class="custom-btn-grp btn-group-toggle" ngbRadioGroup name="radioBasic">
+    <label ngbButtonLabel class="custom-btn">
+      <input
+        ngbButton
+        type="radio"
+        value="cod"
+        class="radio-btn"
+        (click)="showStores($event)"
+      />
+      <img src="../../../../assets/cash-on-delivery.svg" />
+      Cash on delivery
+    </label>
+    <label ngbButtonLabel class="custom-btn">
+      <input
+        ngbButton
+        type="radio"
+        value="onlineBanking"
+        (click)="showStores($event)"
+      />
+      <img src="../../../../assets/credit-card-two.svg" />
+      Online Banking
+    </label>
+    <label ngbButtonLabel class="custom-btn">
+      <input
+        ngbButton
+        type="radio"
+        value="store"
+        (click)="showStores($event)"
+      />
+      <img src="../../../../assets/store-pick.png" />
+      Pickup from Store
+    </label>
+    <div [hidden]="!storeVisible" ngbDropdown class="d-inline-block">
+      <button
+        [hidden]="!storeVisible"
+        class="btn btn-outline-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Please Select Stores
+      </button>
+      <div
+        [hidden]="!storeVisible"
+        ngbDropdownMenu
+        aria-labelledby="dropdownBasic1"
+      >
+        <button ngbDropdownItem>Madhapur</button>
+        <button ngbDropdownItem>Kukatpally</button>
+        <button ngbDropdownItem>Gachibowli</button>
+        <button ngbDropdownItem>Ameerpet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-order-summary></app-order-summary>
+<a class="btn btn-primary w-100" routerLink="/completion">Submit </a>

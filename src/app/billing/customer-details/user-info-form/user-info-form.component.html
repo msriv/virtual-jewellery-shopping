@@ -1,2 +1,46 @@
 <app-step-indicator step="2"></app-step-indicator>
-<p>user-info-form works!</p>
+<form [formGroup]="userInfoForm">
+  <label>
+    Name
+    <input type="text" formControlName="name" />
+  </label>
+  <label>
+    Email ID
+    <input type="text" formControlName="email" />
+  </label>
+  <label>
+    Phone Number
+    <input type="text" formControlName="phone" />
+  </label>
+  <label>
+    PAN or Aadhaar
+    <input type="text" formControlName="idproof" />
+  </label>
+  <div formGroupName="address">
+    <h5>Address</h5>
+
+    <label>
+      Street:
+      <input type="text" formControlName="street" />
+    </label>
+
+    <label>
+      City:
+      <input type="text" formControlName="city" />
+    </label>
+
+    <label>
+      State:
+      <input type="text" formControlName="state" />
+    </label>
+
+    <label>
+      Zip Code:
+      <input type="text" formControlName="zip" />
+    </label>
+  </div>
+</form>
+<app-order-summary></app-order-summary>
+<a class="btn btn-primary w-100" routerLink="/payment-method"
+  >Submit & Go to Payment Info
+</a>

@@ -8,8 +8,11 @@ import { SharedModule } from '../shared/shared.module';
 import { ResponsiveModule } from 'ngx-responsive';
 import { SidebarModule } from 'ng-sidebar';
 import { EventEmitterService } from '../event-emitter.service';
+import { BillingRoutingModule } from './billing-routing.module';
+import { CompletionComponent } from './completion/completion.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
-  declarations: [BillingComponent],
+  declarations: [BillingComponent, CompletionComponent],
   imports: [
     CommonModule,
     ProductsModule,
@@ -18,9 +21,12 @@ import { EventEmitterService } from '../event-emitter.service';
     ResponsiveModule.forRoot(),
     SidebarModule.forRoot(),
     SharedModule,
+    BillingRoutingModule,
+    NgbModule,
   ],
   exports: [
     BillingComponent,
+    CompletionComponent,
     ProductsModule,
     CustomerDetailsModule,
     PaymentInfoModule,

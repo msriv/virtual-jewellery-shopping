@@ -1,1 +1,35 @@
-<p>order-summary works!</p>
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Grand Total &nbsp;&nbsp;&nbsp; Rs.1,93,326.00">
+    <ng-template ngbPanelContent>
+      <div class="order-receipt">
+        <h4>ORDER SUMMARY</h4>
+        <hr />
+        <table>
+          <tr>
+            <td>Discount</td>
+            <td style="text-align: end">6993.00</td>
+          </tr>
+          <tr>
+            <td>Taxable Amount</td>
+            <td style="text-align: end">187695.43</td>
+          </tr>
+          <tr>
+            <td>SGST</td>
+            <td style="text-align: end">1.5%</td>
+          </tr>
+          <tr>
+            <td>CGST</td>
+            <td style="text-align: end">1.5%</td>
+          </tr>
+          <hr />
+          <tr>
+            <td><p style="font-weight: 600">Grand Total</p></td>
+            <td style="text-align: end">
+              <p style="font-weight: 600">Rs. 19,326.00</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

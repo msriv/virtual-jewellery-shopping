@@ -19,17 +19,22 @@ export class StepIndicatorComponent implements OnInit {
     console.log(this.step);
     if (this.step == 1) {
       this.stage1 = true;
-      console.log(this.stage1, this.stage1complete);
+      this.stage2 = false;
+      this.stage3 = false;
+      this.stage1complete = false;
+      this.stage2complete = false;
     } else if (this.step == 2) {
       this.stage1 = false;
       this.stage2 = true;
+      this.stage3 = false;
       this.stage1complete = true;
+      this.stage2complete = false;
     } else if (this.step == 3) {
-      this.stage3 = true;
-      this.stage2complete = true;
-      this.stage1complete = true;
       this.stage1 = false;
       this.stage2 = false;
+      this.stage3 = true;
+      this.stage1complete = true;
+      this.stage2complete = true;
     }
   }
 }
