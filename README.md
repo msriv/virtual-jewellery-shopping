@@ -5,7 +5,9 @@
 
 This is the assignment given by [F1Studioz](https://www.f1studioz.com/) for the placement process.
 
-Below is the assignment brief -
+### Demo
+
+This is a [demo](https://virtual-jewellery-shopping.netlify.app/) running on a netlify server.
 
 ## ASSIGNMENT
 
@@ -36,7 +38,3 @@ Following is the supporting explanation about the solution that I created for th
 ### Component and Module architecture
 
 ![component_architecture](Component_architecture.png)
-
-### Demo
-
-This is a [demo](https://virtual-jewellery-shopping.netlify.app/) running on a netlify server.
