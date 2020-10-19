@@ -1,5 +1,9 @@
 <ng-sidebar-container>
-  <ng-sidebar #sidebar [position]="position" [opened]="opened">
+  <ng-sidebar
+    [class.windowSize]="this.visible == 1"
+    [position]="position"
+    [opened]="opened"
+  >
     <div class="top-menu">
       <img src="../../../assets/logo.svg" alt="logo" />
       <button id="closebtn" (click)="showBillingMenu()">

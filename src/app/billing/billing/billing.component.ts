@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EventEmitterService } from '../../event-emitter.service';
 
 @Component({
@@ -7,9 +7,11 @@ import { EventEmitterService } from '../../event-emitter.service';
   styleUrls: ['./billing.component.scss'],
 })
 export class BillingComponent implements OnInit {
+  @Input() visible: number;
+
   opened: boolean = false;
   position: string = 'end';
-  state: string[] = ['Products', 'Customer', 'Payments'];
+
   constructor(private eventEmitterService: EventEmitterService) {}
 
   ngOnInit(): void {
@@ -19,6 +21,10 @@ export class BillingComponent implements OnInit {
           this.showBillingMenu();
         }
       );
+    }
+    console.log('visible ==>', this.visible);
+    if (this.visible == 1) {
+      this.opened = true;
     }
   }
 

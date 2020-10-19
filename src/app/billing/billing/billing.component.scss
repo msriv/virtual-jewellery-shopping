@@ -13,6 +13,12 @@ ng-sidebar-container {
   z-index: 102;
   right: 0;
   top: 0;
+
+  &.windowSize {
+    aside {
+      width: 100%;
+    }
+  }
 }
 
 .top-menu {
