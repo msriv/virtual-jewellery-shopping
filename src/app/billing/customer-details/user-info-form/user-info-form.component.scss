@@ -1,0 +1,19 @@
+form {
+  padding: 1em;
+  background-color: white;
+  margin: 1em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}

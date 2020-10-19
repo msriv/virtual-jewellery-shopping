@@ -1,0 +1,19 @@
+.custom-btn-grp {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+
+  .custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    margin: 1em 0;
+    height: 60px;
+
+    &.active {
+      background-color: lightgray;
+    }
+  }
+}
